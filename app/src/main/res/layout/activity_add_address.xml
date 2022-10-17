@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddAddressActivity">
+
+    <include
+        android:id="@+id/app_bar_category"
+        layout="@layout/app_bar_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/app_bar_category"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/tracker"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/addressCompleteIv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/shape_circle_01"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="1"
+                    android:drawableTint="@color/white"
+                    android:elevation="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Address"
+                    android:layout_below="@id/addressCompleteIv"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="2dp"/>
+
+                <View
+                    android:id="@+id/divider16"
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:layout_toEndOf="@id/addressCompleteIv"
+                    android:layout_marginStart="8dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/gray01" />
+
+                <TextView
+                    android:id="@+id/orderSummaryTv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/shape_circle_01"
+                    android:backgroundTint="@color/gray01"
+                    android:text="2"
+                    android:layout_toEndOf="@id/divider16"
+                    android:drawableTint="@color/white"
+                    android:textColor="@color/gray02"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:elevation="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray02"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:text="Confirmation"
+                    android:layout_toEndOf="@id/divider16"
+                    android:layout_below="@id/addressCompleteIv"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginTop="2dp"/>
+
+                <View
+                    android:id="@+id/divider17"
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:layout_toEndOf="@id/orderSummaryTv"
+                    android:layout_marginStart="8dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/gray01" />
+
+                <TextView
+                    android:id="@+id/paymentTv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/shape_circle_01"
+                    android:backgroundTint="@color/gray01"
+                    android:text="3"
+                    android:layout_toEndOf="@id/divider17"
+                    android:drawableTint="@color/white"
+                    android:textColor="@color/gray02"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray02"
+                    android:textSize="14sp"
+                    android:text="Payment"
+                    android:layout_toEndOf="@id/divider17"
+                    android:layout_below="@id/addressCompleteIv"
+                    android:layout_marginStart="-12dp"
+                    android:layout_marginTop="2dp"/>
+
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_toEndOf="@id/orderSummaryTv"
+                    android:layout_marginStart="8dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/cityEt"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/tracker"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="City*"
+                android:textColor="@color/black"
+                android:padding="12sp"
+                android:gravity="bottom"
+                android:inputType="text"
+                android:textColorHint="@color/gray01"/>
+
+            <EditText
+                android:id="@+id/areaEt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/cityEt"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="bottom"
+                android:inputType="textPostalAddress"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Location/area/street/complete Address*"
+                android:textColor="@color/black"
+                android:padding="12sp"
+                android:textColorHint="@color/gray01"/>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/areaEt"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/pincodeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="pincode*"
+                    android:textColor="@color/black"
+                    android:padding="12sp"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/gray01"/>
+
+                <EditText
+                    android:id="@+id/stateEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="state*"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:padding="12sp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/gray01"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/landmarkEt"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/ll"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Landmark"
+                android:inputType="text"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:padding="12sp"
+                android:gravity="bottom"
+                android:textColorHint="@color/gray01"/>
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:inputType="textPersonName"
+                android:layout_below="@id/landmarkEt"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Name*"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:padding="12sp"
+                android:gravity="bottom"
+                android:textColorHint="@color/gray01"/>
+
+            <EditText
+                android:id="@+id/mobileNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/nameEt"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Phone No*"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:padding="12sp"
+                android:inputType="number"
+                android:gravity="bottom"
+                android:textColorHint="@color/gray01"/>
+
+            <EditText
+                android:id="@+id/alternateMobileNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/mobileNoEt"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:inputType="number"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Alternate Phone No"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:padding="12sp"
+                android:gravity="bottom"
+                android:textColorHint="@color/gray01"/>
+
+            <Button
+                android:id="@+id/saveAddressBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:background="@drawable/slider_bg"
+                android:layout_below="@id/alternateMobileNoEt"
+                android:textAllCaps="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="36dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:elevation="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:theme="@style/Widget.AppCompat.ProgressBar"
+                android:padding="5dp"
+                android:background="@drawable/shape_circle_01"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

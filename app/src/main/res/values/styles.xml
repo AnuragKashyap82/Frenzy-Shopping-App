@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="progressBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+        <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+            <item name="android:minHeight">23dip</item>
+            <item name="android:maxHeight">25dip</item>
+        </style>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="7dp"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_cart_black"
+            android:backgroundTint="@color/black"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:text="Want to show your product details as:" />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textView4"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@id/divider12"
+            android:layout_marginTop="0dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tabLayoutBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Tab Layout"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textAlignment="center"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray01"/>
+
+            <TextView
+                android:id="@+id/allDetailsBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="All Details"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

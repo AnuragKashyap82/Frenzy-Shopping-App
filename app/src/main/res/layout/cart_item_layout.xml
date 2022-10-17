@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="3dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/productTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/productImage"
+        android:textSize="16dp"
+        android:text="Poco M3 Pro 5g"/>
+
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="14sp"
+        android:layout_below="@id/productTitleTv"
+        android:text="4gb Ram 128Gb Memory"
+        android:textColor="@color/gray02"
+        android:layout_toEndOf="@id/productImage"
+        android:layout_marginTop="8dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:progress="80"
+        android:layout_below="@id/productDescription"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/productImage"
+        android:progressBackgroundTint="@color/gray01"
+        android:progressTint="@color/successGreen" />
+
+    <TextView
+        android:id="@+id/ratingCountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(673467)"
+        android:layout_toEndOf="@id/ratingBar"
+        android:layout_marginStart="8dp"
+        android:layout_below="@id/productDescription"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/cuttedPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/productImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/ratingBar"
+        android:text="Rs.19990/-"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Rs.14990"
+        android:textSize="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/cuttedPrice"
+        android:layout_below="@id/ratingBar"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/discountPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/productPrice"
+        android:layout_marginStart="6dp"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginTop="8dp"
+        android:text="44% OFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/successGreen"/>
+
+    <ImageView
+        android:id="@+id/coupenIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:tint="@color/successGreen"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/productImage"
+        android:layout_below="@id/cuttedPrice"
+        app:srcCompat="@drawable/ic_coupen_black" />
+
+    <TextView
+        android:id="@+id/coupenTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One offer applied"
+        android:layout_toEndOf="@id/coupenIcon"
+        android:layout_below="@id/productPrice"
+        android:textColor="@color/successGreen"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/quantityLl"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/productImage"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/decrementBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/ic_remove_black"
+            android:backgroundTint="@color/black"/>
+
+        <TextView
+            android:id="@+id/quantityTv"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textSize="18sp"/>
+
+
+        <ImageButton
+            android:id="@+id/incrementBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_add_circle_black"
+            android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/deliveryLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/quantityLl"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/deliveryWithinTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray02"
+            android:gravity="center_vertical"
+            android:text="Delivery within 3-4 days"
+            android:layout_below="@id/productQuantity"
+            android:layout_marginStart="16dp"/>
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/deliveryWithinTv"
+            android:layout_below="@id/productQuantity"
+            android:background="@color/gray02"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/freeDeliveryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="FREE Delivery"
+            android:textStyle="bold"
+            android:textColor="@color/successGreen"
+            android:layout_toEndOf="@id/view11"/>
+
+        <TextView
+            android:id="@+id/deliveryAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:text="Rs.40"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider18"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/deliveryLl"
+        android:background="@color/gray01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:elevation="0dp"
+        android:weightSum="3"
+        android:layout_below="@id/divider18">
+
+        <TextView
+            android:id="@+id/removeFromCartBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Remove"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/ic_delete_black"
+            android:paddingStart="20dp"
+            android:drawablePadding="0dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray01"/>
+
+        <TextView
+            android:id="@+id/buyNowBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Buy Now"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray01"/>
+
+        <TextView
+            android:id="@+id/saveForLaterBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Save for later"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

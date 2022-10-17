@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileActivity">
+
+    <include
+        android:id="@+id/app_bar_category"
+        layout="@layout/app_bar_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIv"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/ic_person_black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_bar_category"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/removeProfileIvBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Remove"
+        android:layout_below="@id/profileIv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/shape_circle_01"
+        android:layout_below="@id/removeProfileIvBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/gray01"
+        android:hint="Name"
+        android:padding="12dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/shape_circle_01"
+        android:layout_below="@id/nameEt"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/gray01"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/shape_circle_01"
+        android:layout_below="@id/emailEt"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/gray01"
+        android:hint="Phone"
+        android:padding="12dp"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/updateProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/shape_circle_01"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:text="Update"
+        android:textAllCaps="false"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:theme="@style/Widget.AppCompat.ProgressBar"
+        android:padding="5dp"
+        android:background="@drawable/shape_circle_01"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

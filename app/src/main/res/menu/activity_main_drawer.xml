@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navMyFrenzy"
+            android:icon="@drawable/ic_order_black"
+            android:title="My Frenzy" />
+
+        <item
+            android:id="@+id/allCategory"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="All Category" />
+
+        <item
+            android:id="@+id/navTrendingStore"
+            android:icon="@drawable/ic_store_black"
+            android:title="Trending Stores" />
+
+        <item
+            android:id="@+id/navSell"
+            android:icon="@drawable/ic_sell_black"
+            android:title="Sell On FrenzyStore" />
+
+        <item
+            android:id="@+id/navRefer"
+            android:icon="@drawable/ic_refer"
+            android:title="Refer &amp; Earn" />
+
+        <item
+            android:id="@+id/navOrders"
+            android:icon="@drawable/ic_order_black"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/navRewards"
+            android:icon="@drawable/ic_reward_black"
+            android:title="My Rewards" />
+
+        <item
+            android:id="@+id/navCart"
+            android:icon="@drawable/ic_cart_black"
+            android:iconTint="@color/black"
+            android:title="My Cart" />
+
+        <item
+            android:id="@+id/navWishlist"
+            android:icon="@drawable/ic_favourite_black"
+            android:title="My Wishlist" />
+
+        <item
+            android:id="@+id/navAccount"
+            android:icon="@drawable/ic_person_black"
+            android:title="My Account" />
+
+    </group>
+
+    <item
+        android:id="@+id/navLogout"
+        android:icon="@drawable/ic_logout_black"
+        android:title="Logout" />
+
+</menu>

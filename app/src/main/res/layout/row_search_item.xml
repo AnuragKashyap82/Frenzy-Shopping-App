@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="ProductTitle"
+        android:layout_toEndOf="@id/productImage"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/productCategory"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:text="productCategory"
+        android:layout_toEndOf="@id/productImage"
+        android:layout_below="@id/productTitle"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray01"
+        android:layout_below="@id/productImage"/>
+</RelativeLayout>

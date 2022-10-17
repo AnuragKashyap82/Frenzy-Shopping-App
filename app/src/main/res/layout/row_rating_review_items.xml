@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:progress="80"
+        android:progressBackgroundTint="@color/gray01"
+        android:progressTint="@color/successGreen" />
+
+    <TextView
+        android:id="@+id/toBeIntegrated"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="To be integrated!!!"
+        android:layout_toEndOf="@id/ratingBar"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12sp"
+        android:textSize="14sp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/reviewTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        android:text="bhbhguibgjewbgergoewuihguohgerelfoefbuoebhbhguibgjewbgergoewuihguohgerelfoefbuoerohgeruoghwuhwrghroi9er8hge98yt9bhbhguibgjewbgergoewuihguohgerelfoefbuoerohgeruoghwuhwrghroi9er8hge98yt9bhbhguibgjewbgergoewuihguohgerelfoefbuoerohgeruoghwuhwrghroi9er8hge98yt9bhbhguibgjewbgergoewuihguohgerelfoefbuoerohgeruoghwuhwrghroi9er8hge98yt9bhbhguibgjewbgergoewuihguohgerelfoefbuoerohgeruoghwuhwrghroi9er8hge98yt9bhbhguibgjewbgergoewuihguohgerelfoefbuoerohgeruoghwuhwrghroi9er8hge98yt9bhbhguibgjewbgergoewuihguohgerelfoefbuoerohgeruoghwuhwrghroi9er8hge98yt9rohgeruoghwuhwrghroi9er8hge98yt9"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="textStart"/>
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/reviewTv"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Anurag Kashyap, city"
+        android:textColor="@color/gray02"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/dateTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="@color/gray02"
+        android:layout_below="@id/nameTv"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="01/55/55 74:55"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/moreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/reviewTv"
+        android:padding="16dp"
+        app:tint="@color/gray02"/>
+
+    <View
+        android:id="@+id/divider22"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/dateTimeTv"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.SearchProductActivity">
+
+<RelativeLayout
+    android:id="@+id/searchRl"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_alignParentTop="true">
+
+    <ImageView
+        android:id="@+id/searchIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_search_black"
+        app:tint="@color/gray02" />
+
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/searchIv"
+        android:hint="Search for products"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_centerVertical="true"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray01"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchRl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/row_search_item"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:elevation="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:theme="@style/Widget.AppCompat.ProgressBar"
+        android:padding="5dp"
+        android:background="@drawable/shape_circle_01"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

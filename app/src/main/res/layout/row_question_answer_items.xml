@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/questionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q: TextView"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/answerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A: TextView"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@id/questionTv"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/moreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_btn"
+        android:layout_alignParentEnd="true"
+        android:padding="12dp"
+        android:layout_marginTop="-16dp"
+        android:layout_below="@id/answerTv"
+        app:tint="@color/gray02"/>
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Anurag Kashyap"
+        android:textColor="@color/gray02"
+        android:layout_below="@id/answerTv"
+        android:layout_marginStart="16dp"
+        android:textSize="12dp"/>
+
+
+    <TextView
+        android:id="@+id/certifiedUsersTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Shop Owner"
+        android:textColor="@color/gray02"
+        android:layout_below="@id/nameTv"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray01"
+        android:layout_below="@id/certifiedUsersTv"/>
+
+</RelativeLayout>

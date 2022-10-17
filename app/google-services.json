@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "504294472492",
+    "firebase_url": "https://frenzystore-44b72-default-rtdb.firebaseio.com",
+    "project_id": "frenzystore-44b72",
+    "storage_bucket": "frenzystore-44b72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504294472492:android:65c70d42e90e8ee0358a89",
+        "android_client_info": {
+          "package_name": "kashyap.anurag.frenzyadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504294472492-0dlblvb7ped2darfqf6he0b64qkehjat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kashyap.anurag.frenzyadmin",
+            "certificate_hash": "f2cc01ad2c521a6d33c78ea2d5e52c45ef185cba"
+          }
+        },
+        {
+          "client_id": "504294472492-pnqr316vn78o35slc1nm61hqfich6q2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcQbQPE1Zdqhg21M4ZDAZ_EZ18-QFBPX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504294472492-pnqr316vn78o35slc1nm61hqfich6q2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504294472492:android:cbe153762f4ac866358a89",
+        "android_client_info": {
+          "package_name": "kashyap.anurag.frenzyseller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504294472492-lj6dnv56u4kp91s4csgn6b93a7t7621q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kashyap.anurag.frenzyseller",
+            "certificate_hash": "f2cc01ad2c521a6d33c78ea2d5e52c45ef185cba"
+          }
+        },
+        {
+          "client_id": "504294472492-pnqr316vn78o35slc1nm61hqfich6q2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcQbQPE1Zdqhg21M4ZDAZ_EZ18-QFBPX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504294472492-pnqr316vn78o35slc1nm61hqfich6q2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504294472492:android:dde412cdbe87ea08358a89",
+        "android_client_info": {
+          "package_name": "kashyap.anurag.frenzystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504294472492-pnqr316vn78o35slc1nm61hqfich6q2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcQbQPE1Zdqhg21M4ZDAZ_EZ18-QFBPX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504294472492-pnqr316vn78o35slc1nm61hqfich6q2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
