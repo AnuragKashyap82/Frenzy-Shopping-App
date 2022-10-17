@@ -44,14 +44,6 @@ public class AddAddressActivity extends AppCompatActivity {
         }else {
             binding.tracker.setVisibility(View.VISIBLE);
         }
-
-        binding.saveAddressBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                startActivity(new Intent(AddAddressActivity.this, DeliveryActivity.class));
-                validateData();
-            }
-        });
     }
 
     private void validateData() {
